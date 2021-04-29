@@ -93,6 +93,7 @@
         }
 
         .navbar-nav {
+            z-index: 100;
             overflow-x: auto;
             position: fixed;
             display: flex;
