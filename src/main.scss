@@ -313,14 +313,15 @@ header {
 
 
 #contact {
+
     .inquery-section {
         min-height: 100vh;
     }
     .formcontainer {
-        border-right: 10px solid white;
-        @include media-breakpoint-down(md) {
-            border: 0;
-        }
+        // border-right: 10px solid white;
+        // @include media-breakpoint-down(md) {
+        //     border: 0;
+        // }
         .form-header {
             font-size: 4rem;
             font-weight: 600;
@@ -347,7 +348,7 @@ header {
     .infolets {
         padding: 0;
         text-align: center;
-        width: 100%;
+        // width: 100%;
         h5 {
             color: $primary;
             font-size: 3rem;
@@ -364,5 +365,24 @@ header {
             font-weight: 800;
             line-height: 1.5rem;
         }
+    }
+}
+
+#footer {
+    
+    margin: 0;
+    margin-top: 5rem;
+    position: relative;
+    background-color: #F6F6F6;
+
+    .absolute-header {
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5rem;
+        font-weight: 900;
+        background-color: $primary;
+        padding: 0.25rem 2rem;
     }
 }
