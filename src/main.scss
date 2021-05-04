@@ -24,7 +24,7 @@
     background: $primary;
 }
 
-body {
+.margin {
     padding-right: $grid-gutter-width / 2;
     padding-left: $grid-gutter-width / 2;
 
@@ -107,6 +107,19 @@ ul {
     background-color: #F6F6F6;
 }
 
+
+.btn-pill {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    padding: 0;
+    background-color: $primary;
+    color: black;
+    padding: 1rem;
+    border-radius: 100%;
+}
 
 // Optional
 @import "../node_modules/bootstrap/scss/reboot";
@@ -314,9 +327,6 @@ header {
 
 #contact {
 
-    .inquery-section {
-        min-height: 100vh;
-    }
     .formcontainer {
         // border-right: 10px solid white;
         // @include media-breakpoint-down(md) {
@@ -384,5 +394,18 @@ header {
         font-weight: 900;
         background-color: $primary;
         padding: 0.25rem 2rem;
+    }
+
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 ~ small {
+        font-weight: 400;
+        font-size: 1.15rem;
     }
 }
